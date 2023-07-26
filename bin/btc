@@ -1,0 +1,5 @@
+#!/bin/sh
+
+DATA=$(curl -s 'https://api.binance.com/api/v1/ticker/price?symbol=BTCUSDT' | jq -r '.price')
+# echo $DATA
+printf "%0.2f\n" $DATA

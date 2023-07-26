@@ -38,17 +38,17 @@
     },
     "custom/usd-price": {
         "format": " {}",
-        "exec": "sh ~/.config/waybar/usd_price_cbr.sh",
+        "exec": "~/bin/usd",
         "interval": 3600
     },
     "custom/eur-price": {
         "format": " {}",
-        "exec": "sh ~/.config/waybar/eur_price_cbr.sh",
+        "exec": "~/bin/eur",
         "interval": 3600
     },
     "custom/btc-price": {
         "format": " {}",
-        "exec": "sh ~/.config/waybar/btc_price_bnnc.sh",
+        "exec": "~/bin/btc",
         "interval": 3600
     },
     "network": {

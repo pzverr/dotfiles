@@ -6,6 +6,13 @@ ln -sf $path/.zshrc $HOME/.zshrc
 ln -sf $path/.zshenv $HOME/.zshenv
 ln -sf $path/.tmux.conf $HOME/.tmux.conf
 
+# User bin folder
+[ ! -d $HOME/bin ] && mkdir -p $HOME/bin
+ln -sf $path/bin/usd $HOME/bin/usd
+ln -sf $path/bin/eur $HOME/bin/eur
+ln -sf $path/bin/btc $HOME/bin/btc
+ln -sf $path/bin/myip $HOME/bin/myip
+
 # Config directory
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
 
