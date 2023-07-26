@@ -1,0 +1,83 @@
+{
+    "mode": "dock",
+    "position": "top",
+    "height": 24,
+    "margin": 4,
+    "spacing": 4,
+    "modules-left": ["sway/workspaces",
+                     "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["custom/usd-price",
+                      "custom/eur-price",
+                      "custom/btc-price",
+                      "network",
+                      "pulseaudio",
+                      "sway/language",
+                      "custom/clock"],
+    "sway/language": {
+        "format": "󰥻 {}",
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+    },
+    "custom/clock": {
+        "format": " {}",
+        "exec": "date +'%H:%M:%S %d/%m/%Y'",
+        "interval": 1
+    },
+    "cpu": {
+        "format": "{usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}%"
+    },
+    "custom/usd-price": {
+        "format": " {}",
+        "exec": "sh ~/.config/waybar/usd_price_cbr.sh",
+        "interval": 3600
+    },
+    "custom/eur-price": {
+        "format": " {}",
+        "exec": "sh ~/.config/waybar/eur_price_cbr.sh",
+        "interval": 3600
+    },
+    "custom/btc-price": {
+        "format": " {}",
+        "exec": "sh ~/.config/waybar/btc_price_bnnc.sh",
+        "interval": 3600
+    },
+    "network": {
+        "format": "󰇚 {bandwidthDownBits} | 󰕒 {bandwidthUpBits}",
+        //"format-wifi": "{essid} ({signalStrength}%)",
+        //"format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+        //"format-linked": "{ifname} (No IP)",
+        //"format-disconnected": "Disconnected",
+        "interval": 2
+    },
+    "pulseaudio": {
+        //"format": "{icon} {volume}% {format_source}",
+        "format": "󰕾 {volume}%",
+        //"format-muted": "{format_source}",
+        //"format-bluetooth": "{icon} {volume}% {format_source}",
+        //"format-bluetooth-muted": "{icon} {format_source}",
+        //"format-source": "{volume}%",
+        //"format-source-muted": "",
+        //"format-icons": {
+        //    "headphone": "",
+        //    "hands-free": "",
+        //    "headset": "",
+        //    "phone": "",
+        //    "portable": "",
+        //    "car": "",
+        //    "default": []
+        //},
+        "scroll-step": 5.0,
+        "max-volume": 100,
+        //"on-click": "pavucontrol"
+    },
+}

@@ -1,0 +1,207 @@
+/* Colors */
+/* https://github.com/morhetz/gruvbox */
+@define-color red_color #cc241d;
+@define-color red2_color #fb4934;
+@define-color green_color #98971a;
+@define-color green2_color #b8bb26;
+@define-color yellow_color #d79921;
+@define-color yellow2_color #fabd2f;
+@define-color blue_color #458588;
+@define-color blue2_color #83a598;
+@define-color purple_color #b16286;
+@define-color purple2_color #d3869b;
+@define-color aqua_color #689d6a;
+@define-color aqua2_color #8ec07c;
+@define-color gray_color #a89985;
+@define-color gray2_color #928374;
+@define-color orange_color #d65d0e;
+@define-color orange2_color #fe8019;
+
+@define-color bg0_color #282828;
+@define-color bg1_color #3c3836;
+@define-color bg2_color #504945;
+@define-color bg3_color #665c54;
+@define-color bg4_color #7c6f64;
+@define-color bg0_h_color #1d2021;
+@define-color bg0_s_color #32302f;
+
+@define-color fg0_color #fbf1c7;
+@define-color fg1_color #ebdbb2;
+@define-color fg2_color #d5c4a1;
+@define-color fg3_color #bdae93;
+@define-color fg4_color #a89984;
+
+* {
+    border: none;
+    border-radius: 0;
+    /* `otf-font-awesome` is required to be installed for icons */
+    /* font-family: JetBrains Mono Medium, Helvetica, Arial, sans-serif; */
+    /* font-family: Roboto Medium, Roboto, Helvetica, Arial, sans-serif; */
+    font-family: Hack Nerd Font, Helvetica, Arial, sans-serif;
+    /* font-family: monospace; */
+    /* font-size: 12px; */
+    /* min-height: 0; */
+}
+
+window#waybar {
+    background-color: @bg0_color;
+    color: @fg1_color;
+}
+
+tooltip {
+}
+
+tooltip label {
+}
+
+#window,
+#workspaces {
+}
+
+#workspaces {
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: @blue_color;
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -2px transparent;
+}
+
+#workspaces button:hover {
+    border: none;
+    background: none;
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces button.focused {
+    background-color: @bg2_color;
+    color: @fg1_color;
+    box-shadow: inset 0 -2px @yellow_color;
+}
+
+#workspaces button.urgent {
+    background-color: @red_color;
+}
+
+.modules-left {
+}
+
+.modules-right {
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#custom-usd-price,
+#custom-eur-price,
+#custom-btc-price {
+    color: @aqua_color;
+    padding: 0 5;
+}
+
+#network {
+    color: @yellow_color;
+    padding: 0 5;
+}
+
+#pulseaudio,
+#language,
+#custom-clock {
+    padding: 0 5;
+}
+
+#mode {
+}
+
+#clock {
+}
+
+#custom-clock {
+}
+
+#battery {
+}
+
+#battery.charging {
+}
+
+@keyframes blink {
+    to {
+    }
+}
+
+#battery.critical:not(.charging) {
+}
+
+label:focus {
+}
+
+#cpu {
+}
+
+#memory {
+}
+
+#backlight {
+}
+
+#network {
+}
+
+#network.disconnected {
+}
+
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+}
+
+#custom-media {
+}
+
+#custom-media.custom-spotify {
+}
+
+#custom-media.custom-vlc {
+}
+
+#temperature {
+}
+
+#temperature.critical {
+}
+
+#tray {
+}
+
+#idle_inhibitor {
+}
+
+#idle_inhibitor.activated {
+}
+
+#mpd {
+}
+
+#mpd.disconnected {
+}
+
+#mpd.stopped {
+}
+
+#mpd.paused {
+}
+
+#language {
+}
+

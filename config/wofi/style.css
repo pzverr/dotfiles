@@ -1,0 +1,81 @@
+/* Colors */
+/* https://github.com/morhetz/gruvbox */
+@define-color red_color #cc241d;
+@define-color red2_color #fb4934;
+@define-color green_color #98971a;
+@define-color green2_color #d8bb26;
+@define-color yellow_color #d79921;
+@define-color yellow2_color #fabd2f;
+@define-color blue_color #458588;
+@define-color blue2_color #83a598;
+@define-color purple_color #b16286;
+@define-color purple2_color #d3869b;
+@define-color aqua_color #689d6a;
+@define-color aqua2_color #8ec07c;
+@define-color gray_color #a89985;
+@define-color gray2_color #928374;
+@define-color orange_color #d65d0e;
+@define-color orange2_color #fe8019;
+
+@define-color bg0_color #282828;
+@define-color bg1_color #3c3836;
+@define-color bg2_color #504945;
+@define-color bg3_color #665c54;
+@define-color bg4_color #7c6f64;
+@define-color bg0_h_color #1d2021;
+@define-color bg0_s_color #32302f;
+
+@define-color fg0_color #fbf1c7;
+@define-color fg1_color #ebdbb2;
+@define-color fg2_color #d5c4a1;
+@define-color fg3_color #bdae93;
+@define-color fg4_color #a89984;
+
+* {
+    /* font-family: Hack Nerd Font; */
+    /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+    /* font-family: monospace; */
+    /* font-size: 12px; */
+    /* min-height: 0; */
+}
+
+window {
+    margin: 2px;
+    border: 2px solid @grey2_color;
+    background-color: @bg0_color;
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    color: @fg1_color;
+    background-color: @bg0_h_color;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: @bg0_color;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: @bg0_color;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: @fg1_color;
+} 
+
+#entry:selected {
+    background-color: @bg0_h_color;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
