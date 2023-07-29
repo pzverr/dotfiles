@@ -1,9 +1,9 @@
 {
     "mode": "dock",
     "position": "top",
-    "height": 24,
-    "margin": 4,
-    "spacing": 4,
+    "height": 32,
+    "margin": 0,
+    "spacing": 5,
     "modules-left": ["sway/workspaces",
                      "sway/mode"],
     "modules-center": ["sway/window"],
@@ -16,13 +16,7 @@
                       "custom/clock"],
     "sway/language": {
         "format": "󰥻 {}",
-        "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
-    },
-    "tray": {
-        "spacing": 10
-    },
-    "clock": {
-        "format": "{:%H:%M}",
+        "on-click": "swaymsg input \"0:0:Eee_PC_WMI_hotkeys\" xkb_switch_layout next",
     },
     "custom/clock": {
         "format": " {}",
@@ -62,7 +56,7 @@
     "pulseaudio": {
         //"format": "{icon} {volume}% {format_source}",
         "format": "󰕾 {volume}%",
-        //"format-muted": "{format_source}",
+        "format-muted": "{format_source}",
         //"format-bluetooth": "{icon} {volume}% {format_source}",
         //"format-bluetooth-muted": "{icon} {format_source}",
         //"format-source": "{volume}%",

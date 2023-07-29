@@ -1,16 +1,17 @@
 max-visible=1
 anchor=top-right
-font=Inconsolata
+font=JetBrains Mono
+default-timeout=5000
 
 icons=1
 markup=1
 
-padding=5
+padding=15
 
-background-color=#689d6a
+background-color=#282828
 progress-color=#ebdbb2
-text-color=#1d2021
+text-color=#ebdbb2
 
-border-color=#ebdbb2
-border-size=5
-border-radius=2
+border-color=#282828
+border-size=2
+border-radius=0
