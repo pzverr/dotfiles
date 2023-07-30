@@ -7,7 +7,8 @@
     "modules-left": ["sway/workspaces",
                      "sway/mode"],
     "modules-center": ["sway/window"],
-    "modules-right": ["custom/usd-price",
+    "modules-right": ["custom/weather",
+                      "custom/usd-price",
                       "custom/eur-price",
                       "custom/btc-price",
                       "network",
@@ -29,6 +30,11 @@
     },
     "memory": {
         "format": "{}%"
+    },
+    "custom/weather": {
+        "format": "󰖐 {}",
+        "exec": "curl 'wttr.in/moscow?MT&lang=ru&format=%t'",
+        "interval": 3600
     },
     "custom/usd-price": {
         "format": " {}",

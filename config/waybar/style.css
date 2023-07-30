@@ -101,6 +101,11 @@ tooltip label {
     margin-right: 0;
 }
 
+#custom-weather {
+    color: @orange2_color;
+    padding: 0 5;
+}
+
 #custom-usd-price,
 #custom-eur-price,
 #custom-btc-price {
@@ -167,12 +172,6 @@ label:focus {
 }
 
 #custom-media {
-}
-
-#custom-media.custom-spotify {
-}
-
-#custom-media.custom-vlc {
 }
 
 #temperature {
