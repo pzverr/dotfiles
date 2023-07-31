@@ -21,8 +21,8 @@ set $menu dmenu_path | wofi --show drun -I | xargs swaymsg exec --
 # https://github.com/morhetz/gruvbox
 # red
 set $color_urgent #cc241d
-# bg0
-set $color_focus #282828
+# bg0_h
+set $color_focus #1d2021
 # bg0
 set $color_bg #282828
 # fg1
@@ -55,7 +55,7 @@ exec mako
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/pz/Pictures/wp1.png fill
+output * bg /home/pz/Pictures/wp3.png fill
 #
 # Example configuration:
 #
