@@ -28,8 +28,7 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'numToStr/Comment.nvim'
-" Plug 'morhetz/gruvbox'
-" Plug 'Mofiqul/vscode.nvim'
+Plug 'morhetz/gruvbox'
 Plug 'navarasu/onedark.nvim'
 call plug#end()
 
@@ -39,7 +38,7 @@ let g:netrw_liststyle = 3 " tree instead of plain view
 " let g:netrw_browse_split = 3 " vertical split window when Enter pressed on file
 let g:netrw_winsize = 30
 
-colorscheme onedark
+colorscheme gruvbox
 
 set completeopt=menu,menuone,noselect
 
