@@ -21,17 +21,11 @@ ln -sf $path/bin/myip $HOME/bin/myip
 [ -d $HOME/.config/alacritty ] && rm -rf $HOME/.config/alacritty
 ln -sf $path/config/alacritty $HOME/.config/alacritty
 
-[ -d $HOME/.config/dunst ] && rm -rf $HOME/.config/dunst
-ln -sf $path/config/dunst $HOME/.config/dunst
-
 [ -d $HOME/.config/htop ] && rm -rf $HOME/.config/htop
 ln -sf $path/config/htop $HOME/.config/htop
 
 [ -d $HOME/.config/httpx ] && rm -rf $HOME/.config/httpx
 ln -sf $path/config/httpx $HOME/.config/httpx
-
-[ -d $HOME/.config/i3 ] && rm -rf $HOME/.config/i3
-ln -sf $path/config/i3 $HOME/.config/i3
 
 [ -d $HOME/.config/lf ] && rm -rf $HOME/.config/lf
 ln -sf $path/config/lf $HOME/.config/lf
@@ -50,9 +44,6 @@ ln -sf $path/config/sway $HOME/.config/sway
 
 [ -d $HOME/.config/waybar ] && rm -rf $HOME/.config/waybar
 ln -sf $path/config/waybar $HOME/.config/waybar
-
-[ -d $HOME/.config/polybar ] && rm -rf $HOME/.config/polybar
-ln -sf $path/config/polybar $HOME/.config/polybar
 
 [ -d $HOME/.config/wofi ] && rm -rf $HOME/.config/wofi
 ln -sf $path/config/wofi $HOME/.config/wofi
