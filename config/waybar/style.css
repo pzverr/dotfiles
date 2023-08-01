@@ -48,19 +48,6 @@ window#waybar {
     color: @fg1_color;
 }
 
-tooltip {
-}
-
-tooltip label {
-}
-
-#window,
-#workspaces {
-}
-
-#workspaces {
-}
-
 #workspaces button {
     padding: 0 5px;
     color: @blue_color;
@@ -78,17 +65,12 @@ tooltip label {
 #workspaces button.focused {
     background-color: @bg2_color;
     color: @fg1_color;
-    box-shadow: inset 0 -2px @yellow_color;
+    box-shadow: inset 0 -2px @fg1_color;
 }
 
 #workspaces button.urgent {
-    background-color: @red_color;
-}
-
-.modules-left {
-}
-
-.modules-right {
+    background-color: @orange2_color;
+    color: @bg0_color;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -122,85 +104,5 @@ tooltip label {
 #language,
 #custom-clock {
     padding: 0 5;
-}
-
-#mode {
-}
-
-#clock {
-}
-
-#custom-clock {
-}
-
-#battery {
-}
-
-#battery.charging {
-}
-
-@keyframes blink {
-    to {
-    }
-}
-
-#battery.critical:not(.charging) {
-}
-
-label:focus {
-}
-
-#cpu {
-}
-
-#memory {
-}
-
-#backlight {
-}
-
-#network {
-}
-
-#network.disconnected {
-}
-
-#pulseaudio {
-}
-
-#pulseaudio.muted {
-}
-
-#custom-media {
-}
-
-#temperature {
-}
-
-#temperature.critical {
-}
-
-#tray {
-}
-
-#idle_inhibitor {
-}
-
-#idle_inhibitor.activated {
-}
-
-#mpd {
-}
-
-#mpd.disconnected {
-}
-
-#mpd.stopped {
-}
-
-#mpd.paused {
-}
-
-#language {
 }
 

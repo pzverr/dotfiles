@@ -8,10 +8,10 @@ markup=1
 
 padding=15
 
-background-color=#282828
-progress-color=#ebdbb2
-text-color=#ebdbb2
+background-color=#ebdbb2
+progress-color=#d65d0e
+text-color=#282828
 
-border-color=#282828
+border-color=#d5c4a1
 border-size=2
 border-radius=0

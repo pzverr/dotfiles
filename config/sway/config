@@ -19,8 +19,8 @@ set $menu dmenu_path | wofi --show drun -I | xargs swaymsg exec --
 
 # Colors
 # https://github.com/morhetz/gruvbox
-# red
-set $color_urgent #cc241d
+# orange2
+set $color_urgent #fe8019
 # bg0_h
 set $color_focus #1d2021
 # bg0
@@ -36,7 +36,7 @@ set $right l
 
 # Gaps
 gaps outer 0
-gaps inner 15 
+gaps inner 15
 
 # smart_borders on
 
