@@ -73,11 +73,10 @@ ZSH_THEME="daveverwer"
 plugins=(
     debian
     docker
-    git
     httpie
     sudo
     tmux
-    # zsh-autosuggestions
+    zsh-autosuggestions
     zsh-syntax-highlighting
 )
 

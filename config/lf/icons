@@ -121,6 +121,7 @@ fi       󰈔      # FILE
 *.edn           
 *.scala         
 *.go            
+*.rust          
 *.dart          
 *.xul           
 *.sln           
