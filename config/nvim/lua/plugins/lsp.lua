@@ -1,30 +1,7 @@
-local comment = require('Comment')
-comment.setup()
-
-local cmp = require('cmp')
-cmp.setup({
-    snippet = {
-        expand = function(args)
-            require('luasnip').lsp_expand(args.body)
-        end,
-    },
-    mapping = cmp.mapping.preset.insert({
-        ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-        ['<C-f>'] = cmp.mapping.scroll_docs(4),
-        ['<C-Space>'] = cmp.mapping.complete(),
-        ['<C-e>'] = cmp.mapping.abort(),
-        ['<CR>'] = cmp.mapping.confirm({ select = true }),
-    }),
-    sources = cmp.config.sources({
-        { name = 'nvim_lsp' },
-        { name = 'luasnip' },
-    }, {
-        { name = 'buffer' },
-    })
-})
+local lspconfig = require('lspconfig')
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local nvim_lsp = require('lspconfig')
+
 local on_attach = function(client, bufnr)
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
@@ -45,7 +22,7 @@ local on_attach = function(client, bufnr)
     vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
-nvim_lsp['pyright'].setup({
+lspconfig['pyright'].setup({
     capabilities = capabilities,
     on_attach = on_attach,
     flags = {
@@ -53,21 +30,45 @@ nvim_lsp['pyright'].setup({
     }
 })
 
-nvim_lsp['gopls'].setup({
+lspconfig['gopls'].setup({
     capabilities = capabilities,
     on_attach = on_attach,
-    cmd = {'gopls'},
+    cmd = {'gopls', '-mode=stdio'},
     filetypes = {"go", "gomod"},
 })
 
-nvim_lsp['tsserver'].setup({
+lspconfig['tsserver'].setup({
     capabilities = capabilities,
     on_attach = on_attach,
-    filetypes = {"typescript", "javascript"}
+    filetypes = {"tsx", "typescript", "javascript"}
 })
 
-nvim_lsp['volar'].setup({
+lspconfig['volar'].setup({
     capabilities = capabilities,
     on_attach = on_attach,
     filetypes = {"vue"}
 })
+
+lspconfig['rust_analyzer'].setup({
+    capabilities = capabilities,
+    on_attach=on_attach,
+    settings = {
+        ["rust-analyzer"] = {
+            imports = {
+                granularity = {
+                    group = "module",
+                },
+                prefix = "self",
+            },
+            cargo = {
+                buildScripts = {
+                    enable = true,
+                },
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
+})
+

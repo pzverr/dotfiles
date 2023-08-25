@@ -119,6 +119,8 @@ alias zshrc='$EDITOR ~/.zshrc'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 
+alias fd="fdfind --threads 8 --ignore-case --absolute-path --hidden"
+
 alias http="http --print HBhb --pretty all --style gruvbox-dark"
 
 alias pa="pass insert -m"
