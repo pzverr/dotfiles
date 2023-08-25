@@ -1,5 +1,4 @@
-# NVIM as Python IDE
+# NVIM
 
 [Как установить neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 
-[Как установть LSP](https://github.com/neovim/nvim-lspconfig)
