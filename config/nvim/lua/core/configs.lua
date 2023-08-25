@@ -1,9 +1,8 @@
-vim.wo.number = true
 vim.opt.number = true
 vim.opt.mouse = ""
---vim.opt.nobackup = true
---vim.opt.noswapfile = true
---vim.opt.nowritebackup = true
+vim.opt.backup = false
+vim.opt.swapfile = false
+vim.opt.writebackup = false
 vim.wo.signcolumn = "yes"
 vim.opt.encoding = "utf-8"
 vim.opt.expandtab = true
