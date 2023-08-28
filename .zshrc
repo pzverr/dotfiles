@@ -109,7 +109,6 @@ export EDITOR='nvim'
 # Example aliases
 #
 alias vim='nvim'
-alias vi='vim'
 
 alias ll='ls -lF --human-readable --color --group-directories-first'
 alias la='ls -lF --all --human-readable --color --group-directories-first'
@@ -119,7 +118,7 @@ alias zshrc='$EDITOR ~/.zshrc'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 
-alias fd="fdfind --threads 8 --ignore-case --absolute-path --hidden"
+alias fd="fd --threads 8 --ignore-case --absolute-path --hidden"
 
 alias http="http --print HBhb --pretty all --style gruvbox-dark"
 

@@ -18,14 +18,31 @@ fc-cache -f -v
 [Установка](https://ohmyz.sh/#install)
 
 #### Плагины
-
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
 
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
 
 ### NodeJS
-
 [Установка](https://github.com/nodesource/distributions#installation-instructions)
+
+### GoLang
+[Установка](https://go.dev/doc/install)
+
+#### gopls - go language server
+```sh
+go install golang.org/x/tools/gopls@latest
+```
+
+### Rust
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+### fd
+[Скачать\Установить](https://github.com/sharkdp/fd/releases)
+
+### bat
+[Скачать\Установить](https://github.com/sharkdp/bat/releases)
 
 ## Установка
 ```sh
