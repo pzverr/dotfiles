@@ -39,5 +39,6 @@ require("lazy").setup({
     { 'hrsh7th/nvim-cmp' },
     { 'hrsh7th/cmp-vsnip' },
     { 'hrsh7th/vim-vsnip' },
+    { 'lewis6991/gitsigns.nvim' },
 })
 
