@@ -120,7 +120,9 @@ alias pbpaste='xsel --clipboard --output'
 
 alias fd="fd --threads 8 --ignore-case --absolute-path --hidden"
 
-alias http="http --print HBhb --pretty all --style gruvbox-dark"
+alias bat="bat --theme OneHalfDark --style=plain"
+
+alias http="http --print HBhb --pretty all --style one-dark"
 
 alias pa="pass insert -m"
 
