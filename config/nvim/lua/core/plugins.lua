@@ -40,5 +40,12 @@ require("lazy").setup({
     { 'hrsh7th/cmp-vsnip' },
     { 'hrsh7th/vim-vsnip' },
     { 'lewis6991/gitsigns.nvim' },
+    {
+        'glepnir/dashboard-nvim',
+        event = 'VimEnter',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons'
+        }
+    }
 })
 
