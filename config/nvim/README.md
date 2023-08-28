@@ -12,6 +12,7 @@
   <li>https://github.com/williamboman/mason.nvim</li>
   <li>https://github.com/neovim/nvim-lspconfig</li>
   <li>https://github.com/hrsh7th/nvim-cmp</li>
+  <li>https://github.com/lewis6991/gitsigns.nvim</li>
 </ol>
 
 __Для работы gopls, pyright, tsserver в системе должны быть установлены golang, nodejs__
