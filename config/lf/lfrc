@@ -1,5 +1,5 @@
 # interpreter for shell commands
-set shell zsh
+set shell sh
 
 set hidden true
 set ignorecase true
@@ -101,13 +101,4 @@ cmd zip ${{
     cp -r $fx $1
     zip -r $1.zip $1
     rm -rf $1
-}}
-
-# Custom Functions
-cmd mkdir ${{
-    mkdir $1
-}}
-
-cmd touch ${{
-    touch $1
 }}
