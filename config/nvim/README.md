@@ -1,6 +1,11 @@
 # NVIM
 
-[Как установить neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+[Скачать](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+
+## Установка
+```sh
+tar zxvf nvim-linux64.tar.gz --strip-component 1 -C /usr/local/
+```
 
 ## Используемые плагины
 
