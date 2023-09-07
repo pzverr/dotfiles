@@ -7,7 +7,11 @@
 
 Установить [Nerd Fonts](https://www.nerdfonts.com/font-downloads), например <i>JetBrainsMono Nerd Font</i>
 
-Распаковать шрифты в ~/.local/share/fonts (или /usr/share/fonts, для всей системы) и выполнить
+Распаковать шрифты в ~/.local/share/fonts (или /usr/share/fonts, для всей системы)
+```sh
+unzip JetBrainsMono.zip -d ~/.local/share/fonts
+```
+и выполнить
 ```sh
 fc-cache -f -v
 ```
