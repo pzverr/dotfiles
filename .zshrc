@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$GOROOT/bin:$GOPATH/bin:$PATH
+export PATH=$HOME/bin:$GOROOT/bin:$GOPATH/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -115,16 +115,14 @@ alias la='ls -lF --all --human-readable --color --group-directories-first'
 
 alias zshrc='$EDITOR ~/.zshrc'
 
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
+# alias pbcopy='xsel --clipboard --input'
+# alias pbpaste='xsel --clipboard --output'
 
 alias fd="fd --threads 8 --ignore-case --absolute-path --hidden"
 
 alias bat="bat --theme OneHalfDark --style=plain"
 
 alias http="http --print HBhb --pretty all --style one-dark"
-
-alias pa="pass insert -m"
 
 alias randpass="openssl rand -base64 16"
 
