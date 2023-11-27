@@ -6,7 +6,6 @@ ln -sf $path/.zshrc $HOME/.zshrc
 ln -sf $path/.zshenv $HOME/.zshenv
 ln -sf $path/.tmux.conf $HOME/.tmux.conf
 ln -sf $path/.Xresources $HOME/.Xresources
-ln -sf $path/.zprofile $HOME/.zprofile
 
 # User bin folder
 [ ! -d $HOME/bin ] && mkdir -p $HOME/bin
@@ -20,9 +19,6 @@ ln -sf $path/bin/myip $HOME/bin/myip
 
 [ -d $HOME/.config/alacritty ] && rm -rf $HOME/.config/alacritty
 ln -sf $path/config/alacritty $HOME/.config/alacritty
-
-[ -d $HOME/.config/htop ] && rm -rf $HOME/.config/htop
-ln -sf $path/config/htop $HOME/.config/htop
 
 [ -d $HOME/.config/httpx ] && rm -rf $HOME/.config/httpx
 ln -sf $path/config/httpx $HOME/.config/httpx
