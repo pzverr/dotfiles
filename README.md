@@ -27,7 +27,7 @@ fc-cache -f -v
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
 
 ### tmux
-[Tmux Plugin Manager] (https://github.com/tmux-plugins/tpm)
+[Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
 ### NodeJS
 [Установка](https://github.com/nodesource/distributions#installation-instructions)
