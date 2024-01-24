@@ -28,7 +28,7 @@ require("lazy").setup({
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
     { 'numToStr/Comment.nvim' },
-    { 'navarasu/onedark.nvim' },
+    { 'ellisonleao/gruvbox.nvim' },
     { 'williamboman/mason.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
 	{ 'neovim/nvim-lspconfig' },
