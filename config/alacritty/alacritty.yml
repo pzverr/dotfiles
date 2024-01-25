@@ -8,9 +8,8 @@
 #
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
-import:
-  - ~/.config/alacritty/themes/themes/one_dark.yaml
-  # - ~/.config/alacritty/themes/themes/nord.yaml
+# import:
+  # - ~/.config/alacritty/themes/themes/one_dark.yaml
   # - ~/.config/alacritty/themes/themes/gruvbox_material_medium_dark.yaml
 
 # Any items in the `env` entry below will be added as
