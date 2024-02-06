@@ -9,6 +9,7 @@ require'nvim-treesitter.configs'.setup {
         "python",
         "php",
         "lua",
+        "proto",
         "javascript",
         "typescript",
         "tsx",
