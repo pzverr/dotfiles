@@ -13,7 +13,7 @@ local on_attach = function(client, bufnr)
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
     local bufopts = {
-        noremapo = true,
+        noremap = true,
         silent = true,
         buffer = bufnr
     }
