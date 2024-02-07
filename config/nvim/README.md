@@ -2,6 +2,9 @@
 
 [Скачать](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 
+## Plugin manager
+[Установка](https://www.lazyvim.org/installation)
+
 ## Установка
 ```sh
 tar zxvf nvim-linux64.tar.gz --strip-component 1 -C /usr/local/
