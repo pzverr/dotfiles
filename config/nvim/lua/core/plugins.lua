@@ -54,6 +54,14 @@ require("lazy").setup({
         dependencies = {
             'nvim-lua/plenary.nvim'
         }
+    },
+    {
+        'stevearc/aerial.nvim',
+        opts = {},
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter",
+            "nvim-tree/nvim-web-devicons"
+        },
     }
 })
 

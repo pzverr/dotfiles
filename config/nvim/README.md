@@ -26,5 +26,6 @@ tar zxvf nvim-linux64.tar.gz --strip-component 1 -C /usr/local/
     <li>https://github.com/lewis6991/gitsigns.nvim</li>
     <li>https://github.com/glepnir/dashboard-nvim</li>
     <li>https://github.com/nvim-telescope/telescope.nvim</li>
+    <li>https://github.com/stevearc/aerial.nvim</li>
 </ol>
 

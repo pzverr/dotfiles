@@ -4,10 +4,10 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 vim.diagnostic.config({virtual_text = false})
 
-vim.keymap.set('n', '<space>d', vim.diagnostic.open_float)
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 
 local on_attach = function(client, bufnr)
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
@@ -46,6 +46,12 @@ lspconfig['gopls'].setup({
     on_attach = on_attach,
     cmd = {'gopls', '-mode=stdio'},
     filetypes = {"go", "gomod"},
+})
+
+lspconfig['clangd'].setup({
+    capabilities = capabilities,
+    on_attach = on_attach,
+    filetypes = {"c", "cpp"},
 })
 
 lspconfig['tsserver'].setup({

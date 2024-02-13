@@ -13,4 +13,5 @@ require('plugins.cmp')
 require('plugins.gitsigns')
 require("plugins.dashboard")
 require("plugins.telescope")
+require("plugins.aerial")
 
