@@ -51,18 +51,7 @@ lspconfig['gopls'].setup({
 lspconfig['clangd'].setup({
     capabilities = capabilities,
     on_attach = on_attach,
+    cmd = {"clangd"},
     filetypes = {"c", "cpp"},
-})
-
-lspconfig['tsserver'].setup({
-    capabilities = capabilities,
-    on_attach = on_attach,
-    filetypes = {"tsx", "typescript", "javascript"}
-})
-
-lspconfig['volar'].setup({
-    capabilities = capabilities,
-    on_attach = on_attach,
-    filetypes = {"vue"}
 })
 

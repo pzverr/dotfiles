@@ -1,5 +1,5 @@
 #!/bin/sh
-#
+
 source $HOME/.cargo/env
 
 export GOROOT=/usr/local/go
