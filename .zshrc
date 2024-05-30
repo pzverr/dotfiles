@@ -130,5 +130,7 @@ alias randpass="openssl rand -base64 16"
 
 alias psg="ps aux | grep $1"
 
+alias p="pass"
+
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src

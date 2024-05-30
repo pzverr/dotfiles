@@ -1,7 +1,7 @@
 require('core.plugins')
-require('core.mappings')
 require('core.colors')
 require('core.configs')
+require('core.autocmds')
 
 require('plugins.neotree')
 require('plugins.bufferline')
@@ -14,4 +14,5 @@ require('plugins.gitsigns')
 require("plugins.dashboard")
 require("plugins.telescope")
 require("plugins.aerial")
+require("plugins.none-ls")
 
