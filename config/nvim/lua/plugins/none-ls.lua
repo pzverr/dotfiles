@@ -6,8 +6,8 @@ null_ls.setup({
 	sources = {
 		null_ls.builtins.formatting.astyle.with({ -- apt install astyle
 			filetypes = { "c", "cpp", "h", "hpp" },
-			-- args = { "--style=java", "--indent=spaces=2" },
-			args = { "--style=allman", "--indent=tab=4" },
+			-- args = { "--style=java", "--indent=spaces=2", "--align-pointer=type" },
+			args = { "--style=allman", "--indent=tab=4", "--align-pointer=type" },
 		}),
 		null_ls.builtins.formatting.gofmt, -- set up with go, from the box
 		null_ls.builtins.formatting.black, -- set up up with mason
@@ -29,11 +29,3 @@ null_ls.setup({
 		end
 	end,
 })
-
--- local bufopts = {
---   noremap = true,
---   silent = true,
---   buffer = bufnr
--- }
-
--- vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format({async = true}) end, bufopts)
