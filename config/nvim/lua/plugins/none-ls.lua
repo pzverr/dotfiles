@@ -6,6 +6,7 @@ null_ls.setup({
 	sources = {
 		null_ls.builtins.formatting.astyle.with({ -- apt install astyle
 			filetypes = { "c", "cpp", "h", "hpp" },
+			-- args = { "--style=java", "--indent=spaces=2" },
 			args = { "--style=allman", "--indent=tab=4" },
 		}),
 		null_ls.builtins.formatting.gofmt, -- set up with go, from the box

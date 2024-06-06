@@ -1,9 +1,9 @@
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 
-augroup("setIndent", { clear = true })
+augroup("SetIndent", { clear = true })
 autocmd("FileType", {
-	group = "setIndent",
+	group = "SetIndent",
 	pattern = {
 		-- "c",
 		-- "cpp",
