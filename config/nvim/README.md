@@ -32,6 +32,16 @@ tar zxvf nvim-linux64.tar.gz --strip-component 1 -C /usr/local/
     <li>https://github.com/nvimtools/none-ls.nvim</li>
 </ol>
 
+### Formatters
+
+Для C\C++ - [astyle](https://astyle.sourceforge.net/). 
+
+Для Python - [black](https://github.com/psf/black)
+
+Для Go - [gofmt](https://pkg.go.dev/cmd/gofmt)
+
+Настройка в файле ![none-ls.lua](/lua/plugins/none-ls.lua)
+
 ## Скриншоты
 
 [Плагин](https://github.com/nvim-neo-tree/neo-tree.nvim)
