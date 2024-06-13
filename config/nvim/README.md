@@ -40,7 +40,7 @@ tar zxvf nvim-linux64.tar.gz --strip-component 1 -C /usr/local/
 
 Для Go - [gofmt](https://pkg.go.dev/cmd/gofmt)
 
-Настройка в файле ![none-ls.lua](/lua/plugins/none-ls.lua)
+Настройка в файле [none-ls.lua](https://github.com/pzverr/dotfiles/blob/main/config/nvim/lua/plugins/none-ls.lua)
 
 ## Скриншоты
 
