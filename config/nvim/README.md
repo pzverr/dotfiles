@@ -11,6 +11,8 @@ tar zxvf nvim-linux64.tar.gz --strip-component 1 -C /usr/local/
 
 <ol>
     <li>https://github.com/numToStr/Comment.nvim</li>
+    <li>https://github.com/nvim-treesitter/nvim-treesitter</li>
+    <li>https://github.com/nvim-neo-tree/neo-tree.nvim</li>
     <li>https://github.com/navarasu/onedark.nvim</li>
     <li>https://github.com/ellisonleao/gruvbox.nvim</li>
     <li>https://github.com/williamboman/mason.nvim</li>
@@ -32,10 +34,21 @@ tar zxvf nvim-linux64.tar.gz --strip-component 1 -C /usr/local/
 
 ## Скриншоты
 
+[Плагин](https://github.com/nvim-neo-tree/neo-tree.nvim)
+
+![neotree.png](screenshots/neotree.png)
+
+[Плагин](https://github.com/williamboman/mason.nvim)
+
+![mason.png](screenshots/mason.png)
+
+[Плагин](https://github.com/folke/lazy.nvim)
+
+![lazy.png](screenshots/lazy.png)
+
 ### LSP для python, golang, C\C++
 
 ![cpp_1.png](screenshots/cpp_1.png)
-![cpp_2.png](screenshots/cpp_2.png)
 ![py_1.png](screenshots/py_1.png)
 
 ### Fuzzy Finder
