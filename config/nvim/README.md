@@ -27,5 +27,20 @@ tar zxvf nvim-linux64.tar.gz --strip-component 1 -C /usr/local/
     <li>https://github.com/glepnir/dashboard-nvim</li>
     <li>https://github.com/nvim-telescope/telescope.nvim</li>
     <li>https://github.com/stevearc/aerial.nvim</li>
+    <li>https://github.com/nvimtools/none-ls.nvim</li>
 </ol>
 
+## Скриншоты
+
+### LSP для python, golang, C\C++
+
+![cpp_1.png](screenshots/cpp_1.png)
+![cpp_2.png](screenshots/cpp_2.png)
+![py_1.png](screenshots/py_1.png)
+
+### Fuzzy Finder
+
+[Плагин](https://github.com/nvim-telescope/telescope.nvim)
+
+![fzf_1.png](screenshots/fzf_1.png)
+![fzf_2.png](screenshots/fzf_2.png)
