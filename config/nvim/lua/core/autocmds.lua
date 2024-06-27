@@ -5,11 +5,11 @@ augroup("SetIndent", { clear = true })
 autocmd("FileType", {
 	group = "SetIndent",
 	pattern = {
-		-- "c",
-		-- "cpp",
-		-- "h",
-		-- "hpp",
-		-- "proto",
+		"c",
+		"cpp",
+		"h",
+		"hpp",
+		"proto",
 		"lua",
 		"js",
 		"ts",

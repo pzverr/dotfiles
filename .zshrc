@@ -115,8 +115,8 @@ alias vim='nvim'
 # alias ll='ls -lF --human-readable --color --group-directories-first'
 # alias la='ls -lF --all --human-readable --color --group-directories-first'
 alias ls='eza --sort=type'
-alias ll='eza --tree --level=2 --sort=type --icons=always --no-time --no-user --no-permissions'
-alias la='eza --long -all --icons=always --sort=type'
+alias ll='eza --long --sort=type --icons=always'
+alias la='eza --long --sort=type --all --icons=always '
 
 alias zshrc='$EDITOR ~/.zshrc'
 
