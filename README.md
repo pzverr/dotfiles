@@ -51,6 +51,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ### bat
 [Скачать\Установить](https://github.com/sharkdp/bat/releases)
 
+### fzf
+[Скачать\Установить](https://github.com/junegunn/fzf/releases)
+
 ## Установка
 ```sh
 chmod +x installdotfiles
