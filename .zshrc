@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$GOROOT/bin:$GOPATH/bin:$PATH
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -114,31 +114,16 @@ alias vim='nvim'
 
 # alias ll='ls -lF --human-readable --color --group-directories-first'
 # alias la='ls -lF --all --human-readable --color --group-directories-first'
-
 alias ls='eza --sort=type'
 alias ll='eza --long --sort=type --icons=always'
 alias la='eza --long --sort=type --all --icons=always '
 
-alias zshrc='$EDITOR ~/.zshrc'
-
-# alias pbcopy='xsel --clipboard --input'
-# alias pbpaste='xsel --clipboard --output'
-
-# alias ff="fzf --preview \"bat --theme gruvbox-dark --color=always --style=numbers --line-range=:200 {}\""
-
-alias ff="rg --color=always \
-   --line-number \
-   --no-heading \
-   --smart-case \"${*:-}\" \
-| fzf --ansi \
-      --delimiter : \
-      --preview \"bat --theme gruvbox-dark --color=always {1} --highlight-line {2} --style=numbers --line-range={2}:+15 --line-range={2}:-15\""
-
-alias fd="fd --threads 8 --ignore-case --absolute-path --hidden"
 alias bat="bat --theme gruvbox-dark"
-alias http="http --print HBhb --pretty all --style one-dark"
-alias randpass="openssl rand -base64 16"
+
+alias http="http --print HBhb --pretty all --style gruvbox-dark"
+
 alias psg="ps aux | grep $1"
+
 alias p="pass"
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions

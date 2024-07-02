@@ -8,11 +8,7 @@ ln -sf $path/.tmux.conf $HOME/.tmux.conf
 ln -sf $path/.Xresources $HOME/.Xresources
 
 # User bin folder
-[ ! -d $HOME/bin ] && mkdir -p $HOME/bin
-ln -sf $path/bin/usd $HOME/bin/usd
-ln -sf $path/bin/eur $HOME/bin/eur
-ln -sf $path/bin/btc $HOME/bin/btc
-ln -sf $path/bin/myip $HOME/bin/myip
+[ ! -d $HOME/.local/bin ] && mkdir -p $HOME/.local/bin
 
 # Config directory
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
