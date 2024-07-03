@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+usage() {
+        echo "Usage: $(basename $0) [-h] EXT STRING"
+        echo "  EXT             Filter by file extension"
+        echo "  STRING          Search string"
+        echo "  -h, --help      Display this help message"
+        echo "Example: ugrep cpp std::vector"
+        echo "This utils must be installed in your system!"
+        echo "https://github.com/sharkdp/fd"
+        echo "https://github.com/sharkdp/bat"
+        echo "https://github.com/junegunn/fzf"
+        echo ""
+}
+
+if [ $# -eq 0 ]; then
+        echo "Error: No arguments provided."
+        usage
+        exit 1
+fi
+
+if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+        usage
+        exit 0
+fi
+
+if [ -z "$2" ]; then
+        echo "Error: Missing STRING argument."
+        usage
+        exit 1
+fi
+
+extension=$1
+search_string=$2
+
+fd . \
+        -t f \
+        -e $extension \
+        -X grep --color -n "$search_string" {} \
+| fzf --ansi \
+        --delimiter : \
+        --preview "bat --color=always {1} --theme zenburn --highlight-line {2} --line-range={2}:-25 --line-range={2}:+25" \
+| cut -d ":" -f 1
+
+exit 0
