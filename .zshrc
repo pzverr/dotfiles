@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+export PATH=$HOME/.local/bin:$GOROOT/bin:$GOPATH/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -112,11 +112,8 @@ export EDITOR='nvim'
 #
 alias vim='nvim'
 
-# alias ll='ls -lF --human-readable --color --group-directories-first'
-# alias la='ls -lF --all --human-readable --color --group-directories-first'
-alias ls='eza --sort=type'
-alias ll='eza --long --sort=type --icons=always'
-alias la='eza --long --sort=type --all --icons=always '
+alias ll="ls -lF --human-readable --color --group-directories-first"
+alias la="ls -lF --all --human-readable --color --group-directories-first"
 
 alias bat="bat --theme gruvbox-dark"
 

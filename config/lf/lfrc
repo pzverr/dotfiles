@@ -107,25 +107,11 @@ cmd zip ${{
 cmd ff ${{
     BAT_PREFIX="bat --theme gruvbox-dark --style=numbers --color=always"
     res="$(
-        FZF_DEFAULT_COMMAND="fd . -t file -E .git" \
-            fzf --print0 --no-ignore-case --ansi --header 'FindFiles' \
-            --preview "$BAT_PREFIX {1}" \
-            | sed 's/\\/\\\\/g;s/"/\\"/g'
+        fd -t f -E .git -E venv -E .venv | \
+        fzf --print0 --no-ignore-case --ansi --header 'FindFiles' --preview "$BAT_PREFIX {1}" | \
+        sed 's/\\/\\\\/g;s/"/\\"/g'
     )"
     [ -n "$res" ] && lf -remote "send $id select \"$res\""
 }}
 map gs :ff
 
-# find-grep
-cmd fg ${{
-    RG_PREFIX="rg --line-number --no-heading --color=always --smart-case"
-    BAT_PREFIX="bat --theme gruvbox-dark --style=numbers --color=always"
-    res="$(
-        FZF_DEFAULT_COMMAND="$RG_PREFIX '${*:-}'" \
-            fzf --print0 --no-ignore-case --ansi --delimiter : --header 'FindGrep' \
-            --preview "$BAT_PREFIX {1} --highlight-line {2} --line-range={2}:-100 --line-range={2}:+100" \
-            | cut -d ':' -f1 | sed 's/\\/\\\\/g;s/"/\\"/g'
-    )"
-    [ -n "$res" ] && lf -remote "send $id select \"$res\""
-}}
-map gs :fg
