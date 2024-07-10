@@ -45,9 +45,6 @@ go install golang.org/x/tools/gopls@latest
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-### fd
-[Скачать\Установить](https://github.com/sharkdp/fd/releases)
-
 ### bat
 [Скачать\Установить](https://github.com/sharkdp/bat/releases)
 

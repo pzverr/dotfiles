@@ -9,7 +9,6 @@ ln -sf $path/.Xresources $HOME/.Xresources
 
 # User bin folder
 [ ! -d $HOME/.local/bin ] && mkdir -p $HOME/.local/bin
-ln -sf $HOME/.dotfiles/bin/ugrep $HOME/.local/bin/ugrep
 
 # Config directory
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
