@@ -10,9 +10,26 @@ require("neo-tree").setup({
 		indent = {
 			indent_size = 2,
 		},
+		last_modified = {
+			enabled = true,
+			required_width = 64,
+		},
 	},
 	window = {
 		position = "float",
+	},
+	filesystem = {
+		filtered_items = {
+			hide_dotfiles = true,
+			hide_gitignored = true,
+			hide_hidden = true,
+			always_show_by_pattern = {
+				".env",
+			},
+			never_show = {
+				".DS_Store",
+			},
+		},
 	},
 })
 

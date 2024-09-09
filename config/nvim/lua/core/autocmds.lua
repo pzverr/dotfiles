@@ -7,6 +7,7 @@ autocmd("FileType", {
 	pattern = {
 		"c",
 		"cpp",
+		"cc",
 		"h",
 		"hpp",
 		"proto",

@@ -111,6 +111,8 @@ export EDITOR='nvim'
 # Example aliases
 #
 
+alias vim="nvim"
+
 alias ll="ls -lF --human-readable --color --group-directories-first"
 alias la="ls -lF --all --human-readable --color --group-directories-first"
 
@@ -121,6 +123,8 @@ alias http="http --style gruvbox-dark"
 alias psg="ps aux | grep $1"
 
 alias p="pass"
+
+alias e="$EDITOR"
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
