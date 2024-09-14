@@ -56,3 +56,17 @@ lspconfig["ts_ls"].setup({
 		"typescript.tsx",
 	},
 })
+
+lspconfig["rust_analyzer"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	cmd = { "rust-analyzer" },
+	filetypes = { "rust" },
+})
+
+lspconfig["gopls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	cmd = { "gopls" },
+	filetypes = { "go", "gomod", "gowork", "gotmpl" },
+})
