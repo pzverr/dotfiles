@@ -1,0 +1,65 @@
+{
+    "theme": {
+        "mode": "system",
+        "light": "Gruvbox Light",
+        "dark": "Gruvbox Dark"
+    },
+    "base_keymap": "JetBrains",
+    "buffer_font_family": "Zed Plex Mono",
+    "buffer_font_size": 16,
+    "ui_font_family": "Zed Plex Sans",
+    "ui_font_size": 16,
+    "vim_mode": false,
+    "confirm_quit": true,
+    // "restore_on_startup": "last_session",
+    "cursor_blink": false,
+    "current_line_highlight": "all",
+    "show_completions_on_input": true,
+    "show_completion_documentation": true,
+    "show_wrap_guides": true,
+    "show_inline_completions": true,
+    "show_whitespaces": "all",
+    "enable_language_server": true,
+    "hard_tabs": false,
+    "tab_size": 4,
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "auto_update": true,
+    "git": {
+        "git_gutter": "tracked_files",
+        "inline_blame": {
+            "enabled": false
+        }
+    },
+    "languages": {
+        "C": {
+            "format_on_save": "on",
+            "use_on_type_format": false,
+            "tab_size": 2
+        },
+        "C++": {
+            "format_on_save": "on",
+            "use_on_type_format": false,
+            "tab_size": 2
+        },
+        "Go": {
+            "format_on_save": "on",
+            "use_on_type_format": false,
+            "tab_size": 4,
+            "hard_tabs": true
+        },
+        "Python": {
+            "format_on_save": "on",
+            "language_servers": ["pyright", "ruff"],
+            "formatter": [
+                {
+                    "language_server": {
+                        "name": "ruff"
+                    }
+                }
+            ]
+        }
+    }
+}
