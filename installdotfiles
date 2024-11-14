@@ -1,0 +1,29 @@
+#!/bin/sh
+
+path=$(pwd)
+
+ln -sf $path/.zshrc $HOME/.zshrc
+ln -sf $path/.zshenv $HOME/.zshenv
+ln -sf $path/.tmux.conf $HOME/.tmux.conf
+
+# User bin folder
+[ ! -d $HOME/.local/bin ] && mkdir -p $HOME/.local/bin
+
+# Config directory
+[ ! -d $HOME/.config ] && mkdir $HOME/.config
+
+[ -d $HOME/.config/alacritty ] && rm -rf $HOME/.config/alacritty
+ln -sf $path/config/alacritty $HOME/.config/alacritty
+
+[ -d $HOME/.config/httpx ] && rm -rf $HOME/.config/httpx
+ln -sf $path/config/httpx $HOME/.config/httpx
+
+[ -d $HOME/.config/lf ] && rm -rf $HOME/.config/lf
+ln -sf $path/config/lf $HOME/.config/lf
+
+[ -d $HOME/.config/nvim ] && rm -rf $HOME/.config/nvim
+ln -sf $path/config/nvim $HOME/.config/nvim
+
+# Local directory
+[ ! -d $HOME/.local ] && mkdir -p $HOME/.local/share
+[ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
