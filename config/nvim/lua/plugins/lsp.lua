@@ -32,9 +32,21 @@ lspconfig.pyright.setup({
 	flags = {
 		debounce_text_changes = 150,
 	},
+	settings = {
+		pyright = {
+			disableOrganizeImports = true,
+		},
+		python = {
+			analysis = {
+				ignore = { "*" },
+			},
+		},
+	},
 	cmd = { "pyright-langserver", "--stdio" },
 	filetypes = { "python" },
 })
+
+lspconfig.ruff.setup({}) -- ruff for code formatting
 
 lspconfig.ts_ls.setup({
 	capabilities = capabilities,
@@ -50,9 +62,7 @@ lspconfig.ts_ls.setup({
 	},
 })
 
-lspconfig.gopls.setup({
+lspconfig.lua_ls.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	cmd = { "gopls" },
-	filetypes = { "go", "gomod", "gowork", "gotmpl" },
 })

@@ -1,9 +1,9 @@
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 
-augroup("SetIndent", { clear = true })
+augroup("SetTwoSpaceIndent", { clear = true })
 autocmd("FileType", {
-	group = "SetIndent",
+	group = "SetTwoSpaceIndent",
 	pattern = {
 		"c",
 		"cpp",
@@ -11,9 +11,9 @@ autocmd("FileType", {
 		"h",
 		"hpp",
 		"proto",
-		"lua",
 		"js",
 		"ts",
+		"tsx",
 		"json",
 		"css",
 		"html",
@@ -21,4 +21,14 @@ autocmd("FileType", {
 		"yaml",
 	},
 	command = "setlocal shiftwidth=2 tabstop=2 softtabstop=2",
+})
+
+augroup("Set4TabIndent", { clear = true })
+autocmd("FileType", {
+	group = "Set4TabIndent",
+	pattern = {
+		"lua",
+		"toml",
+	},
+	command = "setlocal shiftwidth=4 tabstop=4 softtabstop=4 noexpandtab",
 })

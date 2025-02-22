@@ -1,7 +1,23 @@
 -- vim.o.termguicolors = true
 -- vim.o.background = "dark"
 
-require('ayu').setup({
+local transparency = {
+	Normal = { bg = "None" },
+	ColorColumn = { bg = "None" },
+	SignColumn = { bg = "None" },
+	Folded = { bg = "None" },
+	FoldColumn = { bg = "None" },
+	CursorLine = { bg = "None" },
+	CursorColumn = { bg = "None" },
+	WhichKeyFloat = { bg = "None" },
+	VertSplit = { bg = "None" },
+}
+
+local ayu_colors = require("ayu.colors")
+
+require("ayu").setup({
 	mirage = false,
+	overrides = transparency,
 })
-vim.cmd.colorscheme "ayu"
+
+vim.cmd.colorscheme("ayu")
