@@ -23,7 +23,7 @@ lspconfig.clangd.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	cmd = { "clangd" },
-	filetypes = { "c", "cpp", "proto" },
+	filetypes = { "c", "cpp", "cc", "h", "hpp" },
 })
 
 lspconfig.pyright.setup({
@@ -32,21 +32,9 @@ lspconfig.pyright.setup({
 	flags = {
 		debounce_text_changes = 150,
 	},
-	settings = {
-		pyright = {
-			disableOrganizeImports = true,
-		},
-		python = {
-			analysis = {
-				ignore = { "*" },
-			},
-		},
-	},
 	cmd = { "pyright-langserver", "--stdio" },
 	filetypes = { "python" },
 })
-
-lspconfig.ruff.setup({}) -- ruff for code formatting
 
 lspconfig.ts_ls.setup({
 	capabilities = capabilities,

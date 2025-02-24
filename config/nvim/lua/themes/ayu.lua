@@ -17,7 +17,7 @@ local ayu_colors = require("ayu.colors")
 
 require("ayu").setup({
 	mirage = false,
-	overrides = transparency,
+	-- overrides = transparency,
 })
 
 vim.cmd.colorscheme("ayu")

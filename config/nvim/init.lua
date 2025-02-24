@@ -1,5 +1,4 @@
 require("core.plugins")
-require("core.colors")
 require("core.configs")
 require("core.autocmds")
 
@@ -15,3 +14,6 @@ require("plugins.dashboard")
 require("plugins.telescope")
 require("plugins.aerial")
 require("plugins.none-ls")
+
+require("themes.ayu")
+-- require("themes.gruvbox")

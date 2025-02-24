@@ -31,6 +31,7 @@ require("lazy").setup({
 	},
 	{ "numToStr/Comment.nvim" },
 	{ "Shatur/neovim-ayu" },
+	{ "ellisonleao/gruvbox.nvim" },
 	{ "williamboman/mason.nvim" },
 	{ "williamboman/mason-lspconfig.nvim" },
 	{ "neovim/nvim-lspconfig" },
