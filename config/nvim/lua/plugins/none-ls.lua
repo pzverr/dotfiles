@@ -16,15 +16,15 @@ null_ls.setup({
 				buffer = bufnr,
 			})
 			-- format on save
-			-- vim.api.nvim_create_autocmd("BufWritePre", {
-			-- 	group = augroup,
-			-- 	buffer = bufnr,
-			-- 	callback = function()
-			-- 		vim.lsp.buf.format({ bufnr = bufnr })
-			-- 	end,
-			-- })
+			vim.api.nvim_create_autocmd("BufWritePre", {
+				group = augroup,
+				buffer = bufnr,
+				callback = function()
+					vim.lsp.buf.format({ bufnr = bufnr })
+				end,
+			})
 		end
 	end,
 })
 
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, {})
+-- vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, {})

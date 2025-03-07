@@ -1,19 +1,19 @@
 vim.o.background = "dark"
 
-local bg0 = "#282828"
+local dark0_hard = "#1d2021"
+local dark0 = "#282828"
 
 require("gruvbox").setup({
-	transparent_mode = false,
+	contrast = "hard",
 	overrides = {
-		-- SignColumn = { bg = Gruvbox.palette.dark1 },
-		SignColumn = { bg = bg0 },
-		GruvboxRedSign = { bg = bg0 },
-		GruvboxGreenSign = { bg = bg0 },
-		GruvboxYellowSign = { bg = bg0 },
-		GruvboxBlueSign = { bg = bg0 },
-		GruvboxPurpleSign = { bg = bg0 },
-		GruvboxAquaSign = { bg = bg0 },
-		GruvboxOrangeSign = { bg = bg0 },
+		SignColumn = { bg = dark0_hard },
+		GruvboxRedSign = { bg = dark0_hard },
+		GruvboxGreenSign = { bg = dark0_hard },
+		GruvboxYellowSign = { bg = dark0_hard },
+		GruvboxBlueSign = { bg = dark0_hard },
+		GruvboxPurpleSign = { bg = dark0_hard },
+		GruvboxAquaSign = { bg = dark0_hard },
+		GruvboxOrangeSign = { bg = dark0_hard },
 	},
 })
 

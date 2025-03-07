@@ -1,5 +1,4 @@
--- vim.o.termguicolors = true
--- vim.o.background = "dark"
+vim.o.background = "dark"
 
 local transparency = {
 	Normal = { bg = "None" },
@@ -16,7 +15,8 @@ local transparency = {
 local ayu_colors = require("ayu.colors")
 
 require("ayu").setup({
-	mirage = false,
+	-- mirage = false,
+	-- terminal = true,
 	-- overrides = transparency,
 })
 

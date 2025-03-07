@@ -18,6 +18,7 @@ require("neo-tree").setup({
 	window = {
 		position = "float",
 	},
+	popup_border_style = "rounded",
 	filesystem = {
 		filtered_items = {
 			hide_dotfiles = false,
