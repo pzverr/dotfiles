@@ -15,5 +15,6 @@ require("plugins.telescope")
 require("plugins.aerial")
 require("plugins.none-ls")
 
-require("themes.ayu")
+-- require("themes.ayu")
+require("themes.pustota")
 -- require("themes.gruvbox")

@@ -16,7 +16,7 @@ require("neo-tree").setup({
 		},
 	},
 	window = {
-		position = "float",
+		position = "left",
 	},
 	popup_border_style = "rounded",
 	filesystem = {
@@ -34,4 +34,4 @@ require("neo-tree").setup({
 	},
 })
 
-vim.keymap.set("n", "<leader>e", ":Neotree toggle position=float reveal=true action=focus source=filesystem<CR>")
+vim.keymap.set("n", "<leader>e", ":Neotree toggle position=left reveal=true action=focus source=filesystem<CR>")
