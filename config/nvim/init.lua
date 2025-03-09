@@ -16,5 +16,6 @@ require("plugins.aerial")
 require("plugins.none-ls")
 
 -- require("themes.ayu")
+-- require("themes.alabaster")
 require("themes.pustota")
 -- require("themes.gruvbox")

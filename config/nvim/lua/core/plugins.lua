@@ -32,6 +32,7 @@ require("lazy").setup({
 	{ "numToStr/Comment.nvim" },
 	-- { "Shatur/neovim-ayu" },
 	-- { "ellisonleao/gruvbox.nvim" },
+	-- { "p00f/alabaster.nvim" },
 	{
 		"pustota-theme/pustota.nvim",
 		version = "*",
