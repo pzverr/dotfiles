@@ -1,6 +1,7 @@
 require("core.plugins")
 require("core.configs")
 require("core.autocmds")
+require("core.keymapping")
 
 require("plugins.neotree")
 require("plugins.bufferline")
@@ -14,8 +15,7 @@ require("plugins.dashboard")
 require("plugins.telescope")
 require("plugins.aerial")
 require("plugins.none-ls")
+require("plugins.dap")
 
 -- require("themes.ayu")
--- require("themes.alabaster")
-require("themes.pustota")
--- require("themes.gruvbox")
+require("themes.gruvbox")

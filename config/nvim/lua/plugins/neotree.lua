@@ -4,7 +4,7 @@ vim.fn.sign_define("DiagnosticSignInfo", { text = " ", texthl = "DiagnosticSi
 vim.fn.sign_define("DiagnosticSignHint", { text = "󰌵", texthl = "DiagnosticSignHint" })
 
 require("neo-tree").setup({
-	enable_git_status = false,
+	enable_git_status = true,
 	enable_diagnostics = false,
 	default_component_configs = {
 		indent = {
@@ -16,7 +16,7 @@ require("neo-tree").setup({
 		},
 	},
 	window = {
-		position = "left",
+		position = "float",
 	},
 	popup_border_style = "rounded",
 	filesystem = {
@@ -34,4 +34,4 @@ require("neo-tree").setup({
 	},
 })
 
-vim.keymap.set("n", "<leader>e", ":Neotree toggle position=left reveal=true action=focus source=filesystem<CR>")
+vim.keymap.set("n", "<leader>e", ":Neotree toggle position=float reveal=true action=focus source=filesystem<CR>")

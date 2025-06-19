@@ -25,6 +25,7 @@ vim.opt.cursorline = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.wo.signcolumn = "yes"
+vim.opt.termguicolors = true
 vim.opt.mouse = ""
 vim.opt.wildmenu = true
 vim.opt.errorbells = false

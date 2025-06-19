@@ -26,10 +26,11 @@ lspconfig.clangd.setup({
 	filetypes = { "c", "cpp", "cc", "h", "hpp" },
 })
 
-lspconfig.gopls.setup({
+lspconfig.rust_analyzer.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	cmd = { "gopls" },
+	cmd = { "rust-analyzer" },
+	filetypes = { "rust" },
 })
 
 lspconfig.pyright.setup({
