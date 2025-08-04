@@ -20,6 +20,7 @@ require("gruvbox").setup({
 		BufferLineBackground = { bg = colors.dark0_hard, fg = colors.light4 },
 		BufferLineBufferSelected = { bg = colors.dark0_hard, fg = colors.light1 },
 		BufferLineBufferVisible = { bg = colors.dark0_hard, fg = colors.light4 },
+		BufferLineBuffer = { bg = colors.dark0_hard, fg = colors.light4 },
 		BufferLineCloseButtonSelected = { bg = colors.dark0_hard, fg = colors.light1 },
 		BufferLineCloseButtonVisible = { bg = colors.dark0_hard, fg = colors.light4 },
 		BufferLineCloseButton = { bg = colors.dark0_hard, fg = colors.light4 },
@@ -29,6 +30,10 @@ require("gruvbox").setup({
 		BufferLineSeparator = { bg = colors.dark0_hard, fg = colors.dark0_hard },
 		BufferLineIndicatorSelected = { bg = colors.dark0_hard, fg = colors.light1 },
 		BufferLineIndicatorVisible = { bg = colors.dark0_hard, fg = colors.light4 },
+		BufferLineTruncMarker = { bg = colors.dark1, fg = colors.light4 },
+		BufferLineDuplicate = { bg = colors.dark0_hard, fg = colors.light4 },
+		BufferLineDuplicateSelected = { bg = colors.dark0_hard, fg = colors.light1 },
+		BufferLineDuplicateVisible = { bg = colors.dark0_hard, fg = colors.light4 },
 	},
 })
 

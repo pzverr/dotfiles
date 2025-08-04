@@ -17,5 +17,5 @@ require("plugins.aerial")
 require("plugins.none-ls")
 require("plugins.dap")
 
--- require("themes.ayu")
+-- require("themes.auy")
 require("themes.gruvbox")
