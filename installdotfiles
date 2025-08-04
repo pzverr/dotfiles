@@ -24,6 +24,9 @@ ln -sf $path/config/lf $HOME/.config/lf
 [ -d $HOME/.config/nvim ] && rm -rf $HOME/.config/nvim
 ln -sf $path/config/nvim $HOME/.config/nvim
 
+[ -d $HOME/.config/yazi ] && rm -rf $HOME/.config/yazi
+ln -sf $path/config/yazi $HOME/.config/yazi
+
 # Local directory
 [ ! -d $HOME/.local ] && mkdir -p $HOME/.local/share
 [ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
