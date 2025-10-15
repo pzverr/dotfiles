@@ -1,21 +1,22 @@
-require("core.plugins")
-require("core.configs")
-require("core.autocmds")
-require("core.keymapping")
+require "core.plugins"
+require "core.configs"
+require "core.autocmds"
+require "core.keymapping"
 
-require("plugins.neotree")
-require("plugins.bufferline")
-require("plugins.treesitter")
-require("plugins.comment")
-require("plugins.mason")
-require("plugins.lsp")
-require("plugins.cmp")
-require("plugins.gitsigns")
-require("plugins.dashboard")
-require("plugins.telescope")
-require("plugins.aerial")
-require("plugins.none-ls")
-require("plugins.dap")
+require "plugins.neotree"
+require "plugins.bufferline"
+require "plugins.treesitter"
+require "plugins.comment"
+require "plugins.mason"
+require "plugins.lsp"
+require "plugins.cmp"
+require "plugins.gitsigns"
+require "plugins.dashboard"
+require "plugins.telescope"
+require "plugins.aerial"
+require "plugins.none-ls"
+require "plugins.dap"
 
--- require("themes.auy")
-require("themes.gruvbox")
+-- require "themes.auy"
+-- require "themes.onedark"
+require "themes.gruvbox"
