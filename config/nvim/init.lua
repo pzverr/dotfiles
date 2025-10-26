@@ -1,22 +1,31 @@
-require "core.plugins"
+-- Core
 require "core.configs"
+require "core.plugins"
 require "core.autocmds"
 require "core.keymapping"
 
+-- Themes
+require "themes.tokyonight"
+-- require("themes.ayu")
+-- require "themes.gruvbox"
+
+-- UI
+require "plugins.dashboard"
 require "plugins.neotree"
 require "plugins.bufferline"
+
+-- Syntax
 require "plugins.treesitter"
-require "plugins.comment"
+
+-- Dev tools, LSP
 require "plugins.mason"
 require "plugins.lsp"
 require "plugins.cmp"
-require "plugins.gitsigns"
-require "plugins.dashboard"
-require "plugins.telescope"
-require "plugins.aerial"
 require "plugins.none-ls"
 require "plugins.dap"
 
--- require "themes.auy"
--- require "themes.onedark"
-require "themes.gruvbox"
+-- Nav, Git etc
+require "plugins.telescope"
+require "plugins.gitsigns"
+require "plugins.aerial"
+require "plugins.comment"

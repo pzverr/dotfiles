@@ -19,28 +19,28 @@ local on_attach = function(client, bufnr)
     vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
 end
 
-lspconfig.clangd.setup {
+vim.lsp.config("clangd", {
     capabilities = capabilities,
     on_attach = on_attach,
     cmd = { "clangd" },
     filetypes = { "c", "cpp", "cc", "h", "hpp" },
-}
+})
 
-lspconfig.rust_analyzer.setup {
+vim.lsp.config("rust_analyzer", {
     capabilities = capabilities,
     on_attach = on_attach,
     cmd = { "rust-analyzer" },
     filetypes = { "rust" },
-}
+})
 
-lspconfig.gopls.setup {
+vim.lsp.config("gopls", {
     capabilities = capabilities,
     on_attach = on_attach,
     cmd = { "gopls" },
     filetypes = { "go", "gomod", "gowork", "gotmpl" },
-}
+})
 
-lspconfig.pyright.setup {
+vim.lsp.config("pyright", {
     capabilities = capabilities,
     on_attach = on_attach,
     flags = {
@@ -48,4 +48,4 @@ lspconfig.pyright.setup {
     },
     cmd = { "pyright-langserver", "--stdio" },
     filetypes = { "python" },
-}
+})

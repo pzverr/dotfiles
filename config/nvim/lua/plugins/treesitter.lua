@@ -14,6 +14,7 @@ require("nvim-treesitter.configs").setup {
         "go",
         "bp",
         "rust",
+        "zig",
         "java",
         "cmake",
         "make",
